@@ -6,34 +6,78 @@
 
     <!-- SEO -->
     <title>Інформаційна система обліку СТО</title>
-    <meta name="description" content="Інформаційна система для обліку клієнтів, автомобілів та замовлень на СТО.">
+    <meta name="description" content="ERP система для обліку клієнтів, авто та замовлень на СТО.">
     <meta name="keywords" content="СТО, ERP, облік, авто, сервіс">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Інформаційна система обліку СТО">
+    <meta property="og:description" content="Веб система для управління СТО">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="preview.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "СТО ERP",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web"
+    }
+    </script>
 </head>
+
 <body>
 
-    <header>
-        <h1>Інформаційна система обліку СТО</h1>
-    </header>
+<header role="banner">
+    <h1>Інформаційна система обліку СТО</h1>
 
-    <main>
-        <section>
-            <h2>Короткий опис</h2>
-            <p>
-                Навчальна ERP-система для станції технічного обслуговування.
-                Дозволяє керувати клієнтами, автомобілями та замовленнями.
-            </p>
-        </section>
-    </main>
+    <nav aria-label="Головна навігація">
+        <ul>
+            <li><a href="#about">Про проєкт</a></li>
+            <li><a href="#features">Можливості</a></li>
+            <li><a href="#contact">Контакти</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <footer>
-        <p>© 2026 STO Project</p>
-    </footer>
+<main role="main">
+
+    <section id="about">
+        <h2>Про проєкт</h2>
+        <p>
+            Це навчальна ERP-система для станції технічного обслуговування,
+            яка дозволяє вести облік клієнтів, автомобілів та замовлень.
+        </p>
+    </section>
+
+    <section id="features">
+        <h2>Основні можливості</h2>
+        <ul>
+            <li>Облік клієнтів</li>
+            <li>Управління автомобілями</li>
+            <li>Створення замовлень</li>
+            <li>Розрахунок вартості послуг</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Візуалізація</h2>
+        <img src="preview.png" alt="Інтерфейс системи СТО" width="100%">
+    </section>
+
+</main>
+
+<footer id="contact" role="contentinfo">
+    <h3>Контакти</h3>
+    <p>Email: example@email.com</p>
+</footer>
 
 </body>
 </html>
