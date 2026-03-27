@@ -1,71 +1,130 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BASE */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f5f7fa;
     color: #333;
-    padding: 20px;
+    line-height: 1.6;
 }
 
-header {
-    background: #222;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
+/* CONTAINER */
 main {
-    margin-top: 20px;
-}
-
-section {
-    background: white;
+    max-width: 900px;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 10px;
 }
 
-footer {
-    margin-top: 20px;
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: white;
+    padding: 30px 20px;
     text-align: center;
-    font-size: 14px;
 }
 
+header h1 {
+    font-size: 28px;
+}
+
+/* NAV */
 nav ul {
     display: flex;
-    gap: 15px;
-    list-style: none;
     justify-content: center;
-    margin-top: 10px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-img {
-    border-radius: 10px;
+    gap: 20px;
+    list-style: none;
     margin-top: 15px;
 }
 
+nav a {
+    color: #cbd5f5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* SECTIONS */
+section {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* HEADINGS */
 h2 {
     margin-bottom: 10px;
+    font-size: 22px;
 }
 
 h3 {
     margin-top: 15px;
-    color: #444;
+    font-size: 16px;
+    color: #555;
 }
 
-section {
-    margin-bottom: 20px;
+/* LIST */
+ul {
+    padding-left: 20px;
+}
+
+/* IMAGE */
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* BUTTON (на майбутнє) */
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #2563eb;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #1d4ed8;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
 }
